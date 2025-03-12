@@ -1,3 +1,3 @@
 # HTML markup
 
-[Link](https://antmuraha.github.io/goit-markup-hw-05/)
+[Link](https://antmuraha.github.io/goit-markup-hw-06/)
