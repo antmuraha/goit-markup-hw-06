@@ -428,13 +428,57 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/people-office.jpg');
+    url('../images/people-office_320.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .studio {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office_768.jpg');
+  }
+}
+
+@media (min-width: 1158px) {
+  .studio {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office.jpg');
+  }
+}
+
 @media (min-resolution: 2x) {
+  .studio {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office_320_x2.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 768px) {
+  .studio {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office_768_x2.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 1158px) {
   .studio {
     background-image: linear-gradient(
         to bottom,
@@ -710,6 +754,12 @@ a {
   background: var(--color-primary);
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 96px 0px;
+  }
+}
+
 .footer .container {
   display: flex;
   flex-direction: column;
@@ -751,6 +801,7 @@ a {
     flex-direction: row;
     align-items: baseline;
     text-align: left;
+    padding: 0px 108px;
   }
 
   .footer .subscribe {
@@ -761,6 +812,7 @@ a {
 @media (min-width: 1158px) {
   .footer .container {
     gap: unset;
+    padding: 0px;
   }
 
   .footer > .container > div:first-child {
@@ -787,15 +839,18 @@ a {
 
 .subscribe-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  align-items: end;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .subscribe-form {
+    flex-direction: row;
     justify-content: left;
+    align-items: end;
   }
 }
 
