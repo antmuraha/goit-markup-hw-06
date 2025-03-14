@@ -573,6 +573,13 @@ a {
 
 .strategy-card .title {
   margin-bottom: 8px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .strategy-card .title {
+    text-align: left;
+  }
 }
 
 @media (max-width: 1158px) {
