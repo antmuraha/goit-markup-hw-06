@@ -536,11 +536,13 @@ a {
 /* SECTION 2 STRATEGY */
 .strategy-list {
   display: grid;
+  justify-items: center;
   gap: 24px;
 }
 
 .strategy-card {
   flex: 1;
+  width: 288px;
 }
 
 .strategy-icon-card {
